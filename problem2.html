@@ -9,13 +9,22 @@
     <h1>Problem 2</h1>
 
     <p>Why my list does not contains data?</p>
-    <ul id="item-list"></ul>
+    <ul id="item-list">
+        
+    </ul>
     <script>
         const items = ['Item 1', 'Item 2', 'Item 3'];
-
         const itemList = document.getElementById('item-list');
 
-        listItem = items
+        for (let i = 0; i < items.length; i++) {
+            console.log(items[i]);
+            
+
+            itemList.innerHTML += `<li>${items[i]}</li>`;
+            
+        }
+
+       
     </script>
 </body>
 
